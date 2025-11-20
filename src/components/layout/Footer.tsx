@@ -82,7 +82,7 @@ export default function Footer() {
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                             <div>
                                 <h3 className="text-xl font-bold text-white tracking-wider mb-6 relative inline-block">
-                                    Navigation<span className="text-red-400">.</span>
+                                    Navigation<span style={{ color: '#fbbf24' }}>.</span>
                                     <span className="absolute bottom-0 left-0 w-12 h-0.5 bg-yellow-400 -mb-2"></span>
                                 </h3>
 
@@ -96,7 +96,7 @@ export default function Footer() {
 
                             <div>
                                 <h3 className="text-xl font-bold text-white tracking-wider mb-6 relative inline-block">
-                                    Quick Links<span className="text-red-400">.</span>
+                                    Quick Links<span style={{ color: '#fbbf24' }}>.</span>
                                     <span className="absolute bottom-0 left-0 w-12 h-0.5 bg-yellow-400 -mb-2"></span>
                                 </h3>
 
@@ -110,7 +110,7 @@ export default function Footer() {
 
                             <div>
                                 <h3 className="text-xl font-bold text-white tracking-wider mb-6 relative inline-block">
-                                    Subscribe<span className="text-red-400">.</span>
+                                    Subscribe<span style={{ color: '#fbbf24' }}>.</span>
                                     <span className="absolute bottom-0 left-0 w-12 h-0.5 bg-yellow-400 -mb-2"></span>
                                 </h3>
 
