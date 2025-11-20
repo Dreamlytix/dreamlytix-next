@@ -1,11 +1,13 @@
 import React from 'react';
 import Link from 'next/link';
+import logo from '../../../public/globe.svg'
+import Image from 'next/image';
 
 export default function Footer() {
     const currentYear = new Date().getFullYear();
 
     return (
-        <footer className="relative bg-blue-900 text-white">
+        <footer className="relative" style={{ backgroundColor: '#215cc1' }}>
             <div className="absolute top-0 left-0 w-full overflow-hidden leading-none -translate-y-full">
                 <svg
                     className="relative block w-full h-24"
@@ -15,64 +17,129 @@ export default function Footer() {
                 >
                     <path
                         d="M0,0 C300,80 600,80 900,40 C1050,20 1150,50 1200,80 L1200,120 L0,120 Z"
-                        className="fill-blue-900"
-                        style={{ fillOpacity: 1 }}
+                        style={{ fill: '#215cc1' }}
                     />
                 </svg>
             </div>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
-                    <div className="md:col-span-2">
-                        <Link href="/" className="flex items-center space-x-2 mb-4 group">
-                            <h2 className="text-3xl font-bold bg-gradient-to-r from-blue-300 to-cyan-300 bg-clip-text text-transparent group-hover:from-blue-200 group-hover:to-cyan-200 transition-all duration-300">
-                                Dreamlytix
-                            </h2>
-                        </Link>
-                        <p className="text-blue-100 max-w-md text-lg leading-relaxed">
-                            You Dream, We Build. Transforming your ideas into exceptional digital experiences.
-                        </p>
-                        <div className="flex space-x-4 mt-8">
+                <div className="grid grid-cols-1 lg:grid-cols-4 gap-12">
+                    <div className="lg:col-span-1">
+                        <div className="flex space-x-4 mb-12">
                             <SocialLink href="#" label="Twitter" icon="twitter" />
                             <SocialLink href="#" label="GitHub" icon="github" />
                             <SocialLink href="#" label="LinkedIn" icon="linkedin" />
                             <SocialLink href="#" label="Instagram" icon="instagram" />
                         </div>
+                        <Link href="/" className="flex items-center space-x-2 group">
+                            <Image
+                                src={logo}
+                                alt="Dreamlytix Logo"
+                                className="w-10 h-10 object-contain"
+                            />
+                            <h2 className="text-3xl font-bold bg-gradient-to-r from-white to-gray-200 bg-clip-text text-transparent group-hover:from-gray-100 group-hover:to-white transition-all duration-300">
+                                Dreamlytix
+                            </h2>
+                        </Link>
+                        <p className="text-white text-sm leading-relaxed mb-6">
+                            You Dream, We Build. Transforming your ideas into exceptional digital experiences.
+                        </p>
                     </div>
 
-                    <div>
-                        <h3 className="text-sm font-bold text-blue-200 uppercase tracking-wider mb-6 relative inline-block">
-                            Company
-                            <span className="absolute bottom-0 left-0 w-12 h-0.5 bg-cyan-400 -mb-2"></span>
-                        </h3>
-                        <ul className="space-y-4">
-                            <FooterLink href="/about" label="About Us" />
-                            <FooterLink href="/services" label="Services" />
-                            <FooterLink href="/portfolio" label="Portfolio" />
-                            <FooterLink href="/careers" label="Careers" />
-                        </ul>
-                    </div>
+                    <div className="lg:col-span-3">
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+                            <div className="text-center md:text-left">
+                                <h4 className="text-xl md:text-2xl text-white mb-2 font-bold">Phone Number.</h4>
+                                <a
+                                    href="tel:+15551234567"
+                                    className="text-yellow-300 hover:text-yellow-200 text-lg font-bold transition-colors duration-300"
+                                >
+                                    +1 (555) 123-4567
+                                </a>
+                            </div>
 
-                    <div>
-                        <h3 className="text-sm font-bold text-blue-200 uppercase tracking-wider mb-6 relative inline-block">
-                            Support
-                            <span className="absolute bottom-0 left-0 w-12 h-0.5 bg-cyan-400 -mb-2"></span>
-                        </h3>
-                        <ul className="space-y-4">
-                            <FooterLink href="/contact" label="Contact" />
-                            <FooterLink href="/privacy" label="Privacy Policy" />
-                            <FooterLink href="/terms" label="Terms of Service" />
-                            <FooterLink href="/docs" label="Documentation" />
-                        </ul>
+                            <div className="text-center md:text-left">
+                                <h4 className="text-xl md:text-2xl text-white mb-2 font-bold">Email Address.</h4>
+                                <a
+                                    href="mailto:info@gmail.com"
+                                    className="text-yellow-300 hover:text-yellow-200 text-lg font-bold transition-colors duration-300 break-all"
+                                >
+                                    info@gmail.com
+                                </a>
+                            </div>
+                            <div className="text-center md:text-left">
+                                <h4 className="text-xl md:text-2xl text-white mb-2 font-bold">Our Address.</h4>
+                                <a
+                                    href="https://maps.google.com/?q=India"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-yellow-300 hover:text-yellow-200 text-lg font-bold transition-colors duration-300"
+                                >
+                                    India
+                                </a>
+                            </div>
+                        </div>
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <div>
+                                <h3 className="text-xl font-bold text-white tracking-wider mb-6 relative inline-block">
+                                    Navigation<span className="text-red-400">.</span>
+                                    <span className="absolute bottom-0 left-0 w-12 h-0.5 bg-yellow-400 -mb-2"></span>
+                                </h3>
+
+                                <ul className="space-y-4">
+                                    <FooterLink href="/about" label="About Us" />
+                                    <FooterLink href="/services" label="Services" />
+                                    <FooterLink href="/portfolio" label="Portfolio" />
+                                    <FooterLink href="/careers" label="Careers" />
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h3 className="text-xl font-bold text-white tracking-wider mb-6 relative inline-block">
+                                    Quick Links<span className="text-red-400">.</span>
+                                    <span className="absolute bottom-0 left-0 w-12 h-0.5 bg-yellow-400 -mb-2"></span>
+                                </h3>
+
+                                <ul className="space-y-4">
+                                    <FooterLink href="/contact" label="Contact" />
+                                    <FooterLink href="/privacy" label="Privacy Policy" />
+                                    <FooterLink href="/terms" label="Terms of Service" />
+                                    <FooterLink href="/docs" label="Documentation" />
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h3 className="text-xl font-bold text-white tracking-wider mb-6 relative inline-block">
+                                    Subscribe<span className="text-red-400">.</span>
+                                    <span className="absolute bottom-0 left-0 w-12 h-0.5 bg-yellow-400 -mb-2"></span>
+                                </h3>
+
+                                <div className="flex flex-col space-y-3">
+                                    <input
+                                        type="email"
+                                        placeholder="Enter your email"
+                                        className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent backdrop-blur-sm"
+                                    />
+                                    <button className="w-full px-6 py-3 bg-yellow-400 text-gray-900 font-semibold rounded-lg hover:bg-yellow-300 transition-all duration-300 transform hover:scale-105">
+                                        Subscribe Now
+                                    </button>
+                                </div>
+                                <p className="text-white text-xs mt-3">
+                                    By subscribing, you agree to our Privacy Policy
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div className="mt-16 pt-8 border-t border-blue-700/50 flex flex-col md:flex-row justify-between items-center">
-                    <p className="text-blue-200 text-sm">
+                <div className="mt-16 pt-8 border-t border-white/20 flex flex-col md:flex-row justify-between items-center">
+                    <p className="text-white text-sm">
                         © {currentYear} Dreamlytix. All rights reserved.
                     </p>
-                    <div className="mt-4 md:mt-0 flex space-x-6 text-sm text-blue-200">
-                        <span className="flex items-center">Made with <span className="text-red-400 mx-1 animate-pulse">❤️</span></span>
+                    <div className="mt-4 md:mt-0 flex space-x-6 text-sm text-white">
+                        <span className="flex items-center">
+                            Made with <span className="text-red-400 mx-1 animate-pulse">❤️</span>
+                        </span>
                         <span>•</span>
                         <span>Next.js & TypeScript</span>
                     </div>
@@ -117,8 +184,9 @@ function SocialLink({ href, label, icon }: { href: string; label: string; icon: 
     return (
         <a
             href={href}
-            className="text-blue-200 hover:text-cyan-300 transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 inline-block"
+            className="bg-white rounded-full p-3 transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 inline-block shadow-lg"
             aria-label={label}
+            style={{ color: '#215cc1' }}
         >
             {getIcon(icon)}
         </a>
@@ -130,10 +198,10 @@ function FooterLink({ href, label }: { href: string; label: string }) {
         <li>
             <Link
                 href={href}
-                className="text-blue-100 hover:text-cyan-300 transition-all duration-300 hover:translate-x-1 inline-block relative group"
+                className="text-white hover:text-yellow-300 transition-all duration-300 hover:translate-x-1 inline-block relative group"
             >
                 {label}
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-cyan-400 transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-yellow-400 transition-all duration-300 group-hover:w-full"></span>
             </Link>
         </li>
     );
