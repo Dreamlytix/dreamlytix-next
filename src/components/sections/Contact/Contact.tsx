@@ -192,12 +192,7 @@ export default function Contact() {
                                         />
                                     </div>
 
-                                    <button
-                                        onClick={handleSubmit}
-                                        disabled={isSubmitting}
-                                        className="w-full px-6 py-3 md:py-3.5 font-bold text-sm md:text-base rounded-lg transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
-                                        style={{ backgroundColor: '#fbbf24', color: '#215cc1' }}
-                                    >
+                                    <button className="w-full px-6 py-3 bg-yellow-400 text-gray-900 font-semibold rounded-lg hover:bg-yellow-300 transition-all duration-300 transform hover:scale-105">
                                         {isSubmitting ? (
                                             <span className="flex items-center justify-center">
                                                 <svg className="animate-spin -ml-1 mr-3 h-4 w-4 md:h-5 md:w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
@@ -210,7 +205,6 @@ export default function Contact() {
                                             'Send Message'
                                         )}
                                     </button>
-
                                     <p className="text-center text-xs md:text-sm text-gray-500 mt-2">
                                         We typically respond within 24 hours
                                     </p>
