@@ -30,12 +30,17 @@ const Hero = () => {
         {/* Right Column - Image */}
         <div className="relative flex justify-center items-center">
           <div className="relative w-full max-w-md">
-            <Image
+            {/* <Image
               src="https://images.unsplash.com/vector-1761074651005-97a2e57eef29?q=80&w=872&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Team working on software project"
               width={600}
               height={600}
-              className="rounded-2xl shadow-xl object-cover"
+              // className="rounded-2xl shadow-xl object-cover"
+            /> */}
+            <img
+              src="/hero.svg"
+              alt="background shape"
+              // className="w-[900px] md:w-[1100px] h-auto translate-x-40 -translate-y-40"
             />
           </div>
         </div>
