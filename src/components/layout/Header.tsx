@@ -18,17 +18,21 @@ const Header = () => {
         {/* Navigation Links */}
         <ul className="hidden md:flex items-center space-x-12 text-base font-medium">
           <li>
-            <Link href="/about" className="text-gray-700 hover:text-gray-900">
+            <a href="#about" className="text-gray-700 hover:text-gray-900">
               About Us
-            </Link>
+            </a>
           </li>
           <li>
-            <Link
+            {/* <Link
               href="/services"
               className="text-gray-700 hover:text-gray-900"
             >
               Services
-            </Link>
+            </Link> */}
+
+            <a href="#services" className="text-gray-700 hover:text-gray-900">
+              Services
+            </a>
           </li>
           <li>
             <Link
