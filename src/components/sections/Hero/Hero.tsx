@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 
@@ -22,7 +23,14 @@ const Hero = () => {
             "You Dream, We Build — delivering technology with purpose."
           </blockquote>
 
-          <button className="px-8 py-3 bg-gray-900 text-white rounded-md text-lg font-medium hover:bg-gray-800 transition">
+          <button
+            onClick={() => {
+              console.log("Contact");
+              const contact = document.getElementById("contact");
+              contact?.scrollIntoView({ behavior: "smooth" });
+            }}
+            className="px-8 py-3 bg-gray-900 text-white rounded-md text-lg font-medium hover:bg-gray-800 transition"
+          >
             Get a Free Consultation
           </button>
         </div>
