@@ -35,12 +35,9 @@ const Header = () => {
             </a>
           </li>
           <li>
-            <Link
-              href="/portfolio"
-              className="text-gray-700 hover:text-gray-900"
-            >
+            <a href="#portfolio" className="text-gray-700 hover:text-gray-900">
               Portfolio
-            </Link>
+            </a>
           </li>
           <li>
             <Link href="/blogs" className="text-gray-700 hover:text-gray-900">
