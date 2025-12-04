@@ -7,7 +7,7 @@ export default function Footer() {
     const currentYear = new Date().getFullYear();
 
     return (
-        <footer className="relative" style={{ backgroundColor: '#2350AE' }}>
+        <footer className="relative" style={{ backgroundColor: '#2350AE ' }}>
             <div className="absolute top-0 left-0 w-full overflow-hidden leading-none -translate-y-full">
                 <svg
                     className="relative block w-full h-24"
@@ -27,8 +27,9 @@ export default function Footer() {
                     <div className="lg:col-span-1">
                         <div className="flex space-x-4 mb-12">
                             <SocialLink href="#" label="Twitter" icon="twitter" />
-                            <SocialLink href="#" label="GitHub" icon="github" />
+                            {/* <SocialLink href="#" label="GitHub" icon="github" /> */}
                             <SocialLink href="#" label="LinkedIn" icon="linkedin" />
+                            <SocialLink href="#" label="Instagram" icon="instagram" />
                         </div>
                         <Link href="/" className="flex items-center space-x-2 group">
                             {/* <Image
@@ -38,7 +39,7 @@ export default function Footer() {
                             /> */}
                             <h2 className="text-3xl font-bold bg-gradient-to-r from-white to-gray-200 bg-clip-text text-transparent group-hover:from-gray-100 group-hover:to-white transition-all duration-300">
                                 <Link href="/" className="text-3xl font-bold">
-                                    <span className="text-gray-900">Dream</span>
+                                    <span className="text-gray-100">Dream</span>
                                     <span className="text-orange-500">lytix</span>
                                 </Link>
                             </h2>
@@ -187,7 +188,7 @@ function SocialLink({ href, label, icon }: { href: string; label: string; icon: 
             href={href}
             className="bg-white rounded-full p-3 transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 inline-block shadow-lg"
             aria-label={label}
-            style={{ color: '#2350AE' }}
+            style={{ color: '#2350AE ' }}
         >
             {getIcon(icon)}
         </a>
