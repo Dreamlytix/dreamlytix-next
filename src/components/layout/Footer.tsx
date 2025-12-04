@@ -29,7 +29,6 @@ export default function Footer() {
                             <SocialLink href="#" label="Twitter" icon="twitter" />
                             <SocialLink href="#" label="GitHub" icon="github" />
                             <SocialLink href="#" label="LinkedIn" icon="linkedin" />
-                            <SocialLink href="#" label="Instagram" icon="instagram" />
                         </div>
                         <Link href="/" className="flex items-center space-x-2 group">
                             <Image
@@ -120,7 +119,7 @@ export default function Footer() {
                                         placeholder="Enter your email"
                                         className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent backdrop-blur-sm"
                                     />
-                                    <button className="w-full px-6 py-3 bg-yellow-400 text-gray-900 font-semibold rounded-lg hover:bg-yellow-300 transition-all duration-300 transform hover:scale-105">
+                                    <button className="cursor-pointer w-full px-6 py-3 bg-yellow-400 text-gray-900 font-semibold rounded-lg hover:bg-yellow-300 transition-all duration-300 transform hover:scale-105">
                                         Subscribe Now
                                     </button>
                                 </div>
@@ -139,9 +138,8 @@ export default function Footer() {
                     <div className="mt-4 md:mt-0 flex space-x-6 text-sm text-white">
                         <span className="flex items-center">
                             Made with <span className="text-red-400 mx-1 animate-pulse">❤️</span>
+                            <span>Dreamlytix</span>
                         </span>
-                        <span>•</span>
-                        <span>Next.js & TypeScript</span>
                     </div>
                 </div>
             </div>

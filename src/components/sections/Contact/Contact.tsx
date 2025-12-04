@@ -37,16 +37,39 @@ export default function Contact() {
 
     const faqs = [
         {
-            question: "What is the right age to join the courses?",
-            answer: "Our courses are designed for children aged 6-16 years. We have different programs tailored for different age groups to ensure the best learning experience."
+            question: "What services does Dreamlytix offer?",
+            answer:
+                "Dreamlytix provides end-to-end IT services including website development, portfolio and blog creation, e-commerce solutions, customer service systems, and custom fintech platforms. We build everything from simple static sites to full-scale enterprise applications."
         },
         {
-            question: "What do parents need to bring for the class?",
-            answer: "Just bring enthusiasm! We provide all necessary materials including robotics kits, laptops, and learning resources. Students only need to bring their curiosity and creativity."
+            question: "How long does it take to build a website?",
+            answer:
+                "The timeline depends on the project complexity. A basic portfolio website may take 5–10 days, while e-commerce or fintech platforms can take 3–8 weeks. We provide a detailed timeline after understanding your exact requirements."
         },
         {
-            question: "What is the class size and configuration?",
-            answer: "We maintain small class sizes of 6-8 students per instructor to ensure personalized attention. Classes are configured in a collaborative workshop-style setup."
+            question: "Do you offer custom designs or use templates?",
+            answer:
+                "We specialize in fully customized UI/UX designs tailored to your brand. However, if a client prefers a faster and more budget-friendly option, we also provide high-quality template-based solutions."
+        },
+        {
+            question: "Will my website be mobile-friendly and SEO-optimized?",
+            answer:
+                "Yes! All Dreamlytix websites are mobile-responsive, SEO-friendly, and optimized for speed, performance, and user experience across all devices."
+        },
+        {
+            question: "Do you provide post-launch support and maintenance?",
+            answer:
+                "Absolutely. We offer various support and maintenance packages including updates, bug fixes, performance optimization, and content changes to ensure your website continues running smoothly."
+        },
+        {
+            question: "Can Dreamlytix help with branding and content creation?",
+            answer:
+                "Yes. Along with development, we assist with logo creation, brand identity, copywriting, and content strategy to ensure your business presents a strong and consistent digital presence."
+        },
+        {
+            question: "What is your pricing structure?",
+            answer:
+                "Our pricing depends on project scope and complexity. We offer flexible plans from affordable static websites to advanced custom applications. After a quick discussion, we share a transparent quotation with no hidden charges."
         }
     ];
 
