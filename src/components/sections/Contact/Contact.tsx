@@ -92,7 +92,7 @@ export default function Contact() {
             <div className="max-w-7xl mx-auto">
                 {/* Header */}
                 <div className="text-center mb-12">
-                    <h1 className="text-4xl md:text-5xl font-bold mb-3" style={{ color: '#215cc1' }}>
+                    <h1 className="text-4xl md:text-5xl font-bold mb-3" style={{ color: '#2350AE' }}>
                         Get In Touch<span className="text-orange-500">.</span>
                     </h1>
                     <p className="text-gray-600 text-base md:text-lg max-w-2xl mx-auto">
@@ -105,7 +105,7 @@ export default function Contact() {
                     {/* FAQ Section */}
                     <div className="space-y-0">
                         <div className="mb-8">
-                            <h2 className="text-3xl md:text-4xl font-bold mb-2" style={{ color: '#215cc1' }}>
+                            <h2 className="text-3xl md:text-4xl font-bold mb-2" style={{ color: '#2350AE' }}>
                                 Frequently Asked Questions<span className="text-orange-500">.</span>
                             </h2>
                             <p className="text-gray-600 text-base md:text-lg">Quick answers to questions you may have</p>
@@ -118,14 +118,14 @@ export default function Contact() {
                                         onClick={() => toggleFaq(index)}
                                         className="w-full px-5 py-4 text-left flex items-center justify-between transition-colors duration-200 bg-white hover:bg-gray-50"
                                     >
-                                        <span className="font-semibold text-base md:text-lg pr-4" style={{ color: '#215cc1' }}>
+                                        <span className="font-semibold text-base md:text-lg pr-4" style={{ color: '#2350AE' }}>
                                             {faq.question}
                                         </span>
                                         <svg
                                             className={`w-5 h-5 flex-shrink-0 transition-transform duration-200 ${activeFaq === index ? 'rotate-180' : ''
                                                 }`}
                                             fill="none"
-                                            stroke="#215cc1"
+                                            stroke="#2350AE"
                                             viewBox="0 0 24 24"
                                         >
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -154,14 +154,14 @@ export default function Contact() {
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                                     </svg>
                                 </div>
-                                <h3 className="text-2xl md:text-3xl font-bold mb-2 md:mb-3" style={{ color: '#215cc1' }}>
+                                <h3 className="text-2xl md:text-3xl font-bold mb-2 md:mb-3" style={{ color: '#2350AE' }}>
                                     Message Sent!
                                 </h3>
                                 <p className="text-gray-600 text-base md:text-lg">We'll get back to you within 24 hours.</p>
                             </div>
                         ) : (
                             <>
-                                <h2 className="text-2xl md:text-3xl font-bold mb-1 md:mb-2" style={{ color: '#215cc1' }}>
+                                <h2 className="text-2xl md:text-3xl font-bold mb-1 md:mb-2" style={{ color: '#2350AE' }}>
                                         Send us a Message<span className="text-orange-500">.</span>
                                 </h2>
                                 <p className="text-gray-600 text-sm md:text-base mb-6">Fill out the form below and we'll get back to you soon.</p>

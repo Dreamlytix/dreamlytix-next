@@ -7,7 +7,7 @@ export default function Footer() {
     const currentYear = new Date().getFullYear();
 
     return (
-        <footer className="relative" style={{ backgroundColor: '#215cc1' }}>
+        <footer className="relative" style={{ backgroundColor: '#2350AE ' }}>
             <div className="absolute top-0 left-0 w-full overflow-hidden leading-none -translate-y-full">
                 <svg
                     className="relative block w-full h-24"
@@ -17,7 +17,7 @@ export default function Footer() {
                 >
                     <path
                         d="M0,0 C300,80 600,80 900,40 C1050,20 1150,50 1200,80 L1200,120 L0,120 Z"
-                        style={{ fill: '#215cc1' }}
+                        style={{ fill: '#2350AE' }}
                     />
                 </svg>
             </div>
@@ -188,7 +188,7 @@ function SocialLink({ href, label, icon }: { href: string; label: string; icon: 
             href={href}
             className="bg-white rounded-full p-3 transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 inline-block shadow-lg"
             aria-label={label}
-            style={{ color: '#215cc1' }}
+            style={{ color: '#2350AE ' }}
         >
             {getIcon(icon)}
         </a>
