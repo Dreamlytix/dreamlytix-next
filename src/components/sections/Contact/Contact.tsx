@@ -96,7 +96,7 @@ export default function Contact() {
                         Get In Touch<span style={{ color: '#fbbf24' }}>.</span>
                     </h1>
                     <p className="text-gray-600 text-base md:text-lg max-w-2xl mx-auto">
-                        Feel free to contact us to get any details or book a free lesson for your child!
+                        Feel free to contact us to get any details or book a free lesson for your child! 
                     </p>
                 </div>
 
