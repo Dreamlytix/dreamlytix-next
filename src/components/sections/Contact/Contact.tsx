@@ -93,7 +93,7 @@ export default function Contact() {
                 {/* Header */}
                 <div className="text-center mb-12">
                     <h1 className="text-4xl md:text-5xl font-bold mb-3" style={{ color: '#215cc1' }}>
-                        Get In Touch<span style={{ color: '#fbbf24' }}>.</span>
+                        Get In Touch<span className="text-orange-500">.</span>
                     </h1>
                     <p className="text-gray-600 text-base md:text-lg max-w-2xl mx-auto">
                         Feel free to contact us to get any details or book a free lesson for your child!
@@ -106,7 +106,7 @@ export default function Contact() {
                     <div className="space-y-0">
                         <div className="mb-8">
                             <h2 className="text-3xl md:text-4xl font-bold mb-2" style={{ color: '#215cc1' }}>
-                                Frequently Asked Questions<span style={{ color: '#fbbf24' }}>.</span>
+                                Frequently Asked Questions<span className="text-orange-500">.</span>
                             </h2>
                             <p className="text-gray-600 text-base md:text-lg">Quick answers to questions you may have</p>
                         </div>
@@ -162,7 +162,7 @@ export default function Contact() {
                         ) : (
                             <>
                                 <h2 className="text-2xl md:text-3xl font-bold mb-1 md:mb-2" style={{ color: '#215cc1' }}>
-                                    Send us a Message<span style={{ color: '#fbbf24' }}>.</span>
+                                        Send us a Message<span className="text-orange-500">.</span>
                                 </h2>
                                 <p className="text-gray-600 text-sm md:text-base mb-6">Fill out the form below and we'll get back to you soon.</p>
 

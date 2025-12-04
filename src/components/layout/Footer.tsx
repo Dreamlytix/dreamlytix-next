@@ -27,17 +27,21 @@ export default function Footer() {
                     <div className="lg:col-span-1">
                         <div className="flex space-x-4 mb-12">
                             <SocialLink href="#" label="Twitter" icon="twitter" />
-                            <SocialLink href="#" label="GitHub" icon="github" />
+                            {/* <SocialLink href="#" label="GitHub" icon="github" /> */}
                             <SocialLink href="#" label="LinkedIn" icon="linkedin" />
+                            <SocialLink href="#" label="Instagram" icon="instagram" />
                         </div>
                         <Link href="/" className="flex items-center space-x-2 group">
-                            <Image
+                            {/* <Image
                                 src={logo}
                                 alt="Dreamlytix Logo"
                                 className="w-10 h-10 object-contain"
-                            />
+                            /> */}
                             <h2 className="text-3xl font-bold bg-gradient-to-r from-white to-gray-200 bg-clip-text text-transparent group-hover:from-gray-100 group-hover:to-white transition-all duration-300">
-                                Dreamlytix
+                                <Link href="/" className="text-3xl font-bold">
+                                    <span className="text-gray-100">Dream</span>
+                                    <span className="text-orange-500">lytix</span>
+                                </Link>
                             </h2>
                         </Link>
                         <p className="text-white text-sm leading-relaxed mb-6">
