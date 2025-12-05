@@ -4,22 +4,22 @@ const features = [
   {
     title: "Who We Are",
     icon: Users,
-    desc: "Dreamlytix is a passionate 3-member team specializing in modern web development, UI/UX, backend engineering, and scalable cloud solutions.",
+    desc: "Dreamlytix is a passionate 3-member tech team specializing in modern web development, UI/UX design, backend engineering, and scalable cloud solutions. We focus on building digital experiences that are fast, beautiful, and built to last.",
   },
   {
     title: "Our Mission",
     icon: Target,
-    desc: "To transform ideas into high-quality digital experiences using clean engineering, human-centered design, and modern technologies.",
+    desc: "To transform ideas into high-quality digital experiences through clean engineering, thoughtful design, and the latest modern technologies.",
   },
   {
     title: "What We Do",
     icon: Rocket,
-    desc: "We build websites, web apps, mobile apps, custom software, and business-ready solutions that help companies grow and innovate.",
+    desc: "We develop websites, web apps, mobile apps, custom software, and business-ready digital solutions that help companies grow, automate, and innovate.",
   },
   {
     title: "Why Choose Us",
     icon: HeartHandshake,
-    desc: "We believe in transparency, fast delivery, and long-term partnerships — we treat every project like it’s our own product.",
+    desc: "We believe in transparency, fast delivery, and long-term partnerships. Every project is treated like our own — with attention, ownership, and a commitment to excellence.",
   },
 ];
 
@@ -33,7 +33,7 @@ const About = () => {
         </h2>
         <p className="text-gray-600 mt-4 text-lg">
           A small team with big ambitions — building smart, scalable,
-          human-centric digital products.
+          and human-centric digital products.
         </p>
       </div>
 
