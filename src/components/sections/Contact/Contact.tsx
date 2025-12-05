@@ -96,7 +96,7 @@ export default function Contact() {
                         Get In Touch<span className="text-orange-500">.</span>
                     </h1>
                     <p className="text-gray-600 text-base md:text-lg max-w-2xl mx-auto">
-                        Feel free to contact us to get any details or book a free lesson for your child! 
+                        Feel free to contact us to get any details or book a free lesson for your child!
                     </p>
                 </div>
 
@@ -116,7 +116,7 @@ export default function Contact() {
                                 <div key={index}>
                                     <button
                                         onClick={() => toggleFaq(index)}
-                                        className="w-full px-5 py-4 text-left flex items-center justify-between transition-colors duration-200 bg-white hover:bg-gray-50"
+                                        className="w-full px-5 py-4 text-left flex items-center justify-between transition-colors duration-200 bg-white hover:bg-gray-50 cursor-pointer"
                                     >
                                         <span className="font-semibold text-base md:text-lg pr-4" style={{ color: '#2350AE' }}>
                                             {faq.question}
@@ -141,9 +141,7 @@ export default function Contact() {
                             ))}
                         </div>
                     </div>
-
                     <div className="rounded-lg border-2 border-gray-200 p-6 md:p-8 bg-white shadow-lg">
-
                         {isSubmitted ? (
                             <div className="text-center py-8 md:py-12">
                                 <div
@@ -157,14 +155,14 @@ export default function Contact() {
                                 <h3 className="text-2xl md:text-3xl font-bold mb-2 md:mb-3" style={{ color: '#2350AE' }}>
                                     Message Sent!
                                 </h3>
-                                <p className="text-gray-600 text-base md:text-lg">We'll get back to you within 24 hours.</p>
+                                <p className="text-gray-600 text-base md:text-lg">We will get back to you within 24 hours.</p>
                             </div>
                         ) : (
                             <>
                                 <h2 className="text-2xl md:text-3xl font-bold mb-1 md:mb-2" style={{ color: '#2350AE' }}>
-                                        Send us a Message<span className="text-orange-500">.</span>
+                                    Send us a Message<span className="text-orange-500">.</span>
                                 </h2>
-                                <p className="text-gray-600 text-sm md:text-base mb-6">Fill out the form below and we'll get back to you soon.</p>
+                                <p className="text-gray-600 text-sm md:text-base mb-6">Fill out the form below and we will get back to you soon.</p>
 
                                 <div className="space-y-4">
                                     <div>
@@ -190,19 +188,6 @@ export default function Contact() {
                                             placeholder="your.email@example.com"
                                         />
                                     </div>
-
-                                    <div>
-                                        <input
-                                            type="text"
-                                            name="subject"
-                                            value={formData.subject}
-                                            onChange={handleChange}
-                                            required
-                                            className="w-full px-3 md:px-4 py-2.5 md:py-3 rounded-lg border-2 border-gray-200 text-gray-900 text-sm md:text-base placeholder-gray-400 focus:outline-none focus:border-yellow-400 transition-colors duration-200"
-                                            placeholder="What is this about?"
-                                        />
-                                    </div>
-
                                     <div>
                                         <textarea
                                             name="message"
