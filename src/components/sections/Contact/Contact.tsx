@@ -37,16 +37,39 @@ export default function Contact() {
 
     const faqs = [
         {
-            question: "What is the right age to join the courses?",
-            answer: "Our courses are designed for children aged 6-16 years. We have different programs tailored for different age groups to ensure the best learning experience."
+            question: "What services does Dreamlytix offer?",
+            answer:
+                "Dreamlytix provides end-to-end IT services including website development, portfolio and blog creation, e-commerce solutions, customer service systems, and custom fintech platforms. We build everything from simple static sites to full-scale enterprise applications."
         },
         {
-            question: "What do parents need to bring for the class?",
-            answer: "Just bring enthusiasm! We provide all necessary materials including robotics kits, laptops, and learning resources. Students only need to bring their curiosity and creativity."
+            question: "How long does it take to build a website?",
+            answer:
+                "The timeline depends on the project complexity. A basic portfolio website may take 5–10 days, while e-commerce or fintech platforms can take 3–8 weeks. We provide a detailed timeline after understanding your exact requirements."
         },
         {
-            question: "What is the class size and configuration?",
-            answer: "We maintain small class sizes of 6-8 students per instructor to ensure personalized attention. Classes are configured in a collaborative workshop-style setup."
+            question: "Do you offer custom designs or use templates?",
+            answer:
+                "We specialize in fully customized UI/UX designs tailored to your brand. However, if a client prefers a faster and more budget-friendly option, we also provide high-quality template-based solutions."
+        },
+        {
+            question: "Will my website be mobile-friendly and SEO-optimized?",
+            answer:
+                "Yes! All Dreamlytix websites are mobile-responsive, SEO-friendly, and optimized for speed, performance, and user experience across all devices."
+        },
+        {
+            question: "Do you provide post-launch support and maintenance?",
+            answer:
+                "Absolutely. We offer various support and maintenance packages including updates, bug fixes, performance optimization, and content changes to ensure your website continues running smoothly."
+        },
+        {
+            question: "Can Dreamlytix help with branding and content creation?",
+            answer:
+                "Yes. Along with development, we assist with logo creation, brand identity, copywriting, and content strategy to ensure your business presents a strong and consistent digital presence."
+        },
+        {
+            question: "What is your pricing structure?",
+            answer:
+                "Our pricing depends on project scope and complexity. We offer flexible plans from affordable static websites to advanced custom applications. After a quick discussion, we share a transparent quotation with no hidden charges."
         }
     ];
 
@@ -69,11 +92,11 @@ export default function Contact() {
             <div className="max-w-7xl mx-auto">
                 {/* Header */}
                 <div className="text-center mb-12">
-                    <h1 className="text-4xl md:text-5xl font-bold mb-3" style={{ color: '#215cc1' }}>
-                        Get In Touch<span style={{ color: '#fbbf24' }}>.</span>
+                    <h1 className="text-4xl md:text-5xl font-bold mb-3" style={{ color: '#2350AE' }}>
+                        Get In Touch<span className="text-orange-500">.</span>
                     </h1>
                     <p className="text-gray-600 text-base md:text-lg max-w-2xl mx-auto">
-                        Feel free to contact us to get any details or book a free lesson for your child!
+                        Feel free to contact us to get any details or book a free lesson for your child! 
                     </p>
                 </div>
 
@@ -82,8 +105,8 @@ export default function Contact() {
                     {/* FAQ Section */}
                     <div className="space-y-0">
                         <div className="mb-8">
-                            <h2 className="text-3xl md:text-4xl font-bold mb-2" style={{ color: '#215cc1' }}>
-                                Frequently Asked Questions<span style={{ color: '#fbbf24' }}>.</span>
+                            <h2 className="text-3xl md:text-4xl font-bold mb-2" style={{ color: '#2350AE' }}>
+                                Frequently Asked Questions<span className="text-orange-500">.</span>
                             </h2>
                             <p className="text-gray-600 text-base md:text-lg">Quick answers to questions you may have</p>
                         </div>
@@ -95,14 +118,14 @@ export default function Contact() {
                                         onClick={() => toggleFaq(index)}
                                         className="w-full px-5 py-4 text-left flex items-center justify-between transition-colors duration-200 bg-white hover:bg-gray-50"
                                     >
-                                        <span className="font-semibold text-base md:text-lg pr-4" style={{ color: '#215cc1' }}>
+                                        <span className="font-semibold text-base md:text-lg pr-4" style={{ color: '#2350AE' }}>
                                             {faq.question}
                                         </span>
                                         <svg
                                             className={`w-5 h-5 flex-shrink-0 transition-transform duration-200 ${activeFaq === index ? 'rotate-180' : ''
                                                 }`}
                                             fill="none"
-                                            stroke="#215cc1"
+                                            stroke="#2350AE"
                                             viewBox="0 0 24 24"
                                         >
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -131,15 +154,15 @@ export default function Contact() {
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                                     </svg>
                                 </div>
-                                <h3 className="text-2xl md:text-3xl font-bold mb-2 md:mb-3" style={{ color: '#215cc1' }}>
+                                <h3 className="text-2xl md:text-3xl font-bold mb-2 md:mb-3" style={{ color: '#2350AE' }}>
                                     Message Sent!
                                 </h3>
                                 <p className="text-gray-600 text-base md:text-lg">We'll get back to you within 24 hours.</p>
                             </div>
                         ) : (
                             <>
-                                <h2 className="text-2xl md:text-3xl font-bold mb-1 md:mb-2" style={{ color: '#215cc1' }}>
-                                    Send us a Message<span style={{ color: '#fbbf24' }}>.</span>
+                                <h2 className="text-2xl md:text-3xl font-bold mb-1 md:mb-2" style={{ color: '#2350AE' }}>
+                                        Send us a Message<span className="text-orange-500">.</span>
                                 </h2>
                                 <p className="text-gray-600 text-sm md:text-base mb-6">Fill out the form below and we'll get back to you soon.</p>
 
