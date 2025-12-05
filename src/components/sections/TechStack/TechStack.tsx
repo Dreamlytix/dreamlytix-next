@@ -26,7 +26,6 @@ const TechStack = () => {
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4">
           Technologies <span className="text-orange-500 relative">
             We Use
-            <span className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-orange-500 to-orange-300 rounded-full"></span>
           </span>
         </h2>
         <p className="text-gray-600 mt-6 text-lg max-w-2xl mx-auto leading-relaxed">
