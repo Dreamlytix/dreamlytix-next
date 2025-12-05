@@ -26,10 +26,10 @@ export default function Footer() {
                 <div className="grid grid-cols-1 lg:grid-cols-4 gap-12">
                     <div className="lg:col-span-1">
                         <div className="flex space-x-4 mb-12">
-                            <SocialLink href="#" label="Twitter" icon="twitter" />
+                            <SocialLink href="https://github.com/Dreamlytix/dreamlytix-next" label="Twitter" icon="twitter" />
                             {/* <SocialLink href="#" label="GitHub" icon="github" /> */}
-                            <SocialLink href="#" label="LinkedIn" icon="linkedin" />
-                            <SocialLink href="#" label="Instagram" icon="instagram" />
+                            <SocialLink href="https://github.com/Dreamlytix/dreamlytix-next" label="LinkedIn" icon="linkedin" />
+                            <SocialLink href="https://github.com/Dreamlytix/dreamlytix-next" label="Instagram" icon="instagram" />
                         </div>
                         <Link href="/" className="flex items-center space-x-2 group">
                             {/* <Image
